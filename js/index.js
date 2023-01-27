@@ -13,7 +13,6 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 
 let curriculumVitae = document.querySelector(".cv");
 let cv = document.querySelector(".btn-about");
-let rlq = document.querySelector(".PP");
 
 curriculumVitae.addEventListener('mouseenter', () => curriculumVitae.textContent = 'Aussi appelé CV');
 curriculumVitae.addEventListener('mouseleave', () => curriculumVitae.textContent = 'Curriculum Vitae');
@@ -21,21 +20,27 @@ curriculumVitae.addEventListener('mouseleave', () => curriculumVitae.textContent
 cv.addEventListener('mouseenter', () => cv.textContent = 'Curriculum Vitae*');
 cv.addEventListener('mouseleave', () => cv.textContent = 'Télécharger mon CV');
 
-function hover(str) {
-    document.querySelector(".PP");
+let count = 0;
+let PP = document.getElementsByClassName("PP");
 
-    rlq.addEventListener('mouseenter', () => rlq = rlq + 1);
-
-    rlq.forEach(mouseenter => {
-        console.log(rlq);
-    })
-    // function myEnterFunction() {
-    //     document.getElementById("photo") = x += 1;
-    // }
-
-    if (rlq == 3) {
-        console.log("ça fait mal")
-        window.alert("Hello world!");
-        alert("ça fait mal...");
+PP[0].addEventListener("mouseenter", function () {
+    count++;
+    if (count === 3) {
+        alert("Aïe, ça fait mal !");
     }
-}
+    if (count === 6) {
+        alert("Arrête par contre... vraiment !!");
+    }
+    if (count === 9) {
+        alert("Tu me cherches c'est ça ??");
+    }
+    if (count === 12) {
+        alert("Ok là par contre j'vais commencer à m'énerver.");
+    }
+    if (count === 15) {
+        alert("Bon d'accord t'as gagné -.-");
+    }
+    if (count === 18) {
+        alert("Par contre je vais pas m'amuser à créer 100 alert windows différentes... Donc J'te conseille d'aller voir ailleurs ;)");
+    }
+});
