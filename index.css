@@ -436,9 +436,28 @@ ul>li>a:hover:before {
 }
 
 .sous-nom {
+    display: flex;
     position: absolute;
     Margin-left: 28%;
     margin-top: 16rem;
+}
+
+#autotext {
+    border-right: 0.15em solid #ff79c6;
+    letter-spacing: 0.05em;
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #ff79c6;
+    }
 }
 
 .nom::before {

@@ -41,6 +41,30 @@ PP[0].addEventListener("mouseenter", function () {
         alert("Bon d'accord t'as gagné -.-");
     }
     if (count === 18) {
-        alert("Par contre je vais pas m'amuser à créer 100 alert windows différentes... Donc J'te conseille d'aller voir ailleurs ;)");
+        alert("Par contre je vais pas m'amuser à créer 100 alertes windows différentes... Donc J'te conseille d'aller voir ailleurs ;)");
     }
 });
+
+const title = document.getElementById('autotext');
+const text = "Développeur web";
+
+let index = 0;
+
+const randomSpeed = (min, max) => {
+    return Math.floor(Math.random() * (max - min) + min);
+}
+
+const play = () => {
+    title.innerHTML = text.slice(0, index);
+
+    index++;
+
+    if (index > text.length) {
+        index = 0;
+    }
+
+    clearInterval(timer);
+    timer = setInterval(play, randomSpeed(50, 300));
+};
+
+let timer = setInterval(play, 1000);
