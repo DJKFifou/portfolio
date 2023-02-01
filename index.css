@@ -34,10 +34,10 @@ body {
 
 .bar {
     display: block;
-	width: 25px;
-	height: 3px;
-	margin: 5px auto;
-	border-radius: 15px;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    border-radius: 15px;
     background-color: black;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -49,6 +49,7 @@ body {
         display: flex;
         flex-direction: column;
     }
+
     .bloc-noir {
         display: flex;
         width: 100%;
@@ -109,7 +110,7 @@ body {
         font-size: 1.8rem;
         font-weight: 600;
     }
-    
+
 }
 
 @media screen and (max-width: 520px) {
@@ -133,7 +134,7 @@ body {
     .mrg-btm {
         margin-bottom: 20px;
     }
-    
+
     .rec-proj {
         display: flex;
         height: 400px;
@@ -147,7 +148,7 @@ body {
         cursor: pointer;
         position: relative;
         overflow: hidden;
-        box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.4);
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
     }
 }
 
@@ -165,6 +166,7 @@ body {
     .nom {
         Margin-left: 14%;
     }
+
     .sous-nom {
         Margin-left: 18%;
     }
@@ -183,7 +185,7 @@ body {
     }
 }
 
-.nav-menu{
+.nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -239,23 +241,24 @@ body {
         opacity: 0;
         margin-bottom: 200px;
     }
-    
+
     .PP {
         height: 300px;
         border-radius: 600px;
         border: 10px solid white;
         transition: 0.3s ease;
-    }   
+    }
 
-    .actions > a{
+    .actions>a {
         display: none;
     }
 
-    .li{
+    .li {
         display: none;
     }
 
-    .rotating, .fleche {
+    .rotating,
+    .fleche {
         display: none;
     }
 }
@@ -285,6 +288,7 @@ ul {
 .actions {
     display: flex;
     align-items: center;
+    width: 207px;
 }
 
 .btn {
@@ -318,11 +322,11 @@ ul li a:visited {
     color: black;
 }
 
-div > a:visited {
+div>a:visited {
     color: white;
 }
 
-div:hover > a:visited {
+div:hover>a:visited {
     color: black;
 }
 
@@ -333,6 +337,7 @@ ul li a:hover {
 a {
     text-decoration: none;
 }
+
 /*
 ul>li>a {
     display :block;
@@ -380,10 +385,11 @@ ul>li>a:hover:before {
 }*/
 
 @keyframes rotating {
-    from{
+    from {
         -webkit-transform: rotate(0deg);
     }
-    to{
+
+    to {
         -webkit-transform: rotate(360deg);
     }
 }
@@ -405,7 +411,7 @@ ul>li>a:hover:before {
     background-repeat: no-repeat;
     z-index: 5;
 }
-    
+
 .rotating {
     position: absolute;
     margin-top: 500px;
@@ -430,9 +436,28 @@ ul>li>a:hover:before {
 }
 
 .sous-nom {
+    display: flex;
     position: absolute;
     Margin-left: 28%;
     margin-top: 16rem;
+}
+
+#autotext {
+    border-right: 0.15em solid #ff79c6;
+    letter-spacing: 0.05em;
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #ff79c6;
+    }
 }
 
 .nom::before {
@@ -463,9 +488,11 @@ ul>li>a:hover:before {
         Margin-left: 14%;
         white-space: nowrap;
     }
+
     .sous-nom {
         Margin-left: 18%;
     }
+
     .text {
         text-align: center;
     }
@@ -477,6 +504,7 @@ ul>li>a:hover:before {
         Margin-left: 8%;
         white-space: nowrap;
     }
+
     .sous-nom {
         Margin-left: 12%;
     }
@@ -496,10 +524,12 @@ ul>li>a:hover:before {
         Margin-left: 12%;
         letter-spacing: 0.2rem;
     }
+
     .sous-nom {
         position: absolute;
         Margin-left: 16%;
     }
+
     .img-bg {
         left: 50%;
     }
@@ -513,16 +543,19 @@ ul>li>a:hover:before {
         margin-top: 1rem;
         letter-spacing: 0.2rem;
     }
+
     .sous-nom {
         position: absolute;
         Margin-left: 36%;
         margin-top: 5rem;
     }
+
     .img-bg {
         left: 28%;
         top: 200px;
         margin-top: 40px;
     }
+
     .about {
         margin-top: 400px;
     }
@@ -533,20 +566,24 @@ ul>li>a:hover:before {
     .img-bg {
         height: 0;
     }
+
     .nom {
         position: absolute;
         Margin-left: 22%;
         margin-top: 1rem;
         letter-spacing: 0.2rem;
     }
+
     .sous-nom {
         position: absolute;
         Margin-left: 26%;
         margin-top: 5rem;
     }
+
     .background {
         height: 100px;
     }
+
     .about {
         margin-top: 6rem;
     }
@@ -560,6 +597,7 @@ ul>li>a:hover:before {
         margin-top: 1rem;
         letter-spacing: 0.2rem;
     }
+
     .sous-nom {
         position: absolute;
         Margin-left: 16%;
@@ -575,6 +613,7 @@ ul>li>a:hover:before {
         margin-top: 1rem;
         letter-spacing: 0.2rem;
     }
+
     .sous-nom {
         position: absolute;
         Margin-left: 10%;
@@ -643,6 +682,7 @@ ul>li>a:hover:before {
         align-items: center;
     }
 }
+
 /*.photo {
     display: flex;
     background: white;
@@ -672,7 +712,7 @@ ul>li>a:hover:before {
 @media screen and (max-width: 650px) {
 
     .PP:hover {
-        display: none;   
+        display: none;
     }
 }
 
@@ -726,7 +766,7 @@ ul>li>a:hover:before {
         padding: 0 14rem;
     }
 
-    .mrg-btm{
+    .mrg-btm {
         margin-bottom: 20px;
     }
 }
@@ -746,20 +786,20 @@ ul>li>a:hover:before {
         cursor: pointer;
         position: relative;
         overflow: hidden;
-        box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.4);
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
     }
 }
 
 .rec-proj:before {
     content: '';
-    background: linear-gradient(90deg, rgba(0,0,0,0.59) 0%, rgba(0,0,0,0) 30%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.59) 0%, rgba(0, 0, 0, 0) 30%);
     inset: 0;
     position: absolute;
 }
 
 .rec-proj:hover:before {
     content: '';
-    background: linear-gradient(0deg, rgba(0,0,0,0.59) 0%, rgba(0,0,0,0) 30%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.59) 0%, rgba(0, 0, 0, 0) 30%);
     inset: 0;
     position: absolute;
 }
@@ -768,11 +808,11 @@ ul>li>a:hover:before {
     width: 66%;
 }
 
-.rec-proj:hover > .vertical {
+.rec-proj:hover>.vertical {
     opacity: 0;
 }
 
-.rec-proj:hover > .horizontal {
+.rec-proj:hover>.horizontal {
     opacity: 1;
 }
 
@@ -802,6 +842,7 @@ ul>li>a:hover:before {
     opacity: 0;
     transition: opacity 200ms ease;
 }
+
 /*
 .horizontal:before {
     content: '';
@@ -837,7 +878,7 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-} 
+}
 
 .rights {
     display: flex;
@@ -847,7 +888,7 @@ span {
     margin-bottom: 20px;
 }
 
-.rights > a {
+.rights>a {
     font-weight: 500;
 }
 
@@ -890,6 +931,7 @@ span {
     justify-content: center;
     color: white;
 }
+
 /*
 .footer-name > h5 {
     margin-left: 32%;
