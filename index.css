@@ -692,6 +692,7 @@ ul>li>a:hover:before {
 .btn-about {
     background: black;
     color: white;
+    white-space: nowrap;
     padding: 0 26px;
     border-radius: 24px;
     height: 40px;
