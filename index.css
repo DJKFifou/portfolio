@@ -304,6 +304,7 @@ ul {
     justify-content: center;
     align-items: center;
     border: 2px solid black;
+    white-space: nowrap;
 }
 
 .btn:hover {
@@ -538,34 +539,8 @@ ul>li>a:hover:before {
 
 @media screen and (max-width: 800px) {
 
-    .nom {
-        position: absolute;
-        Margin-left: 32%;
-        margin-top: 1rem;
-        letter-spacing: 0.2rem;
-    }
-
-    .sous-nom {
-        position: absolute;
-        Margin-left: 36%;
-        margin-top: 5rem;
-    }
-
     .img-bg {
-        left: 28%;
-        top: 200px;
-        margin-top: 40px;
-    }
-
-    .about {
-        margin-top: 400px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-
-    .img-bg {
-        height: 0;
+        display: none;
     }
 
     .nom {
